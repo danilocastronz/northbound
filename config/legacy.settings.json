@@ -1,0 +1,7 @@
+{
+  "_comment": "Nobody currently on the team is fully sure what this file controls anymore. It predates most of the current codebase. Ask before changing it.",
+  "retryWindowMinutes": 45,
+  "carrierPollIntervalSeconds": 120,
+  "legacyStatusMapEnabled": true,
+  "notes": "legacyStatusMapEnabled was probably for a migration that already happened. Nobody has been brave enough to turn it off and see what happens."
+}

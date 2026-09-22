@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.claude/settings.local.json
+CLAUDE.local.md
+*.log
+.DS_Store
+tools/northbound-assistant/venv/
+tools/northbound-assistant/__pycache__/
+tools/northbound-assistant/tickets.jsonl
