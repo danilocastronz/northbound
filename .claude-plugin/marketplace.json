@@ -1,0 +1,13 @@
+{
+  "name": "northbound-marketplace",
+  "owner": {
+    "name": "Dan Castro"
+  },
+  "plugins": [
+    {
+      "name": "northbound-toolkit",
+      "source": "./northbound-toolkit",
+      "description": "Shared Claude Code setup for the Northbound project"
+    }
+  ]
+}
