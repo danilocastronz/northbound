@@ -34,3 +34,11 @@ Harborline, and Trailhead Cargo.
 
 - Do not modify config/legacy.settings.json without asking first.
 - Do not commit directly to main.
+
+## MCP
+
+A Postgres MCP server is configured in .mcp.json, scoped to this
+project. Once connected (see README.md), you can ask Claude to check
+the actual shipments table directly instead of guessing at its shape.
+Treat it like any other tool: review before trusting a write, and
+never point it at anything but a local or staging database.
