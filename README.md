@@ -53,38 +53,20 @@ config/
   legacy.settings.json  the file nobody on the team fully understands
 ```
 
-## Which branch should I be on?
+## How to use this repo
 
-This repo has one branch per chapter of the book, `chapter-05`,
-`chapter-09`, and so on, each one a checkpoint of what the codebase
-looks like by the end of that chapter. If you get stuck on something
-hands-on, checking out the relevant chapter branch shows you a working
-version to compare against.
+There is one branch, `main`, and it is the starting point the book assumes
+for Part 2. It intentionally has the Trailhead Cargo bug still in it, no
+CLAUDE.md yet, and no skills, subagents, plugins, or MCP configuration.
+You add those yourself, chapter by chapter, by running the prompts from the
+book in your own copy.
 
-`main` is the starting point, the state the book assumes you begin
-from in Part 2. It intentionally has the Trailhead Cargo bug still in
-it, no CLAUDE.md yet, and no skills, subagents, plugins, or MCP
-configuration. Those get added chapter by chapter, on purpose, so
-that following the book against this repo actually builds the same
-things the book describes, rather than finding them already done for
-you.
+Claude Code is not deterministic, so your diffs will not match the book line
+for line. That is expected. What matters is that each result does what the
+book describes. As chapter 7 recommends, create a branch of your own before
+each exercise rather than working on `main`.
 
-| Branch | State by the end of that chapter |
-|---|---|
-| `main` | Starting point: bug present, no CLAUDE.md, no skills/agents/plugins/MCP |
-| `chapter-01` .. `chapter-04` | Same as `main` (these chapters don't touch the repo) |
-| `chapter-05` | Trailhead Cargo delivery-timing bug fixed, regression tests added |
-| `chapter-06` | CLAUDE.md added |
-| `chapter-07` | CONTRIBUTING.md added |
-| `chapter-08` | docs/troubleshooting.md added |
-| `chapter-09` | add-carrier-integration skill added |
-| `chapter-10` | northbound-toolkit plugin added, wrapping that skill |
-| `chapter-11` | northbound-reviewer subagent added |
-| `chapter-12` | Postgres MCP connection added (.mcp.json) |
-| `chapter-13` | tools/northbound-assistant/, step1_first_request.py |
-| `chapter-14` | step2_structured_prompt.py |
-| `chapter-15` | step3_tool_use.py |
-| `chapter-16` | assistant.py, the finished capstone CLI tool |
-| `chapter-17` | Same as `chapter-16` (closing chapter, no repo changes) |
-
-The `v1-book` tag marks the state matching this edition of the book.
+The Python material from Part 4 (the API experiments and the capstone
+assistant) and the `northbound-toolkit` plugin from chapter 10 are not part
+of this codebase. They live in
+[claude-code-demystified-examples](https://github.com/danilocastronz/claude-code-demystified-examples).
