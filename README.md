@@ -1,3 +1,5 @@
+![Northbound](docs/images/northbound-banner.png)
+
 # Northbound
 
 Northbound is the companion codebase for *Claude Code Demystified: Your
